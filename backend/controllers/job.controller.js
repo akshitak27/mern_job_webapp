@@ -1,8 +1,7 @@
 import { asyncHandler } from "../utils/asynchandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { Job } from "../models/jobs.model.js";
-import { ApiError } from "../utils/ApiError.js";
-import { asyncHandler } from "../utils/asynchandler.js";
+
 
 const getAllJobs= asyncHandler(async(req,res)=>{
     const jobs=await Job.find({expired:false});
@@ -96,7 +95,7 @@ const getAllJobs= asyncHandler(async(req,res)=>{
   });
   });
 
-  export const deleteJob = asyncHandler(async (req, res) => {
+  const deleteJob = asyncHandler(async (req, res) => {
     const { role } = req.user;
     if (role === "Job Seeker") {
       
