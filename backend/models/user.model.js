@@ -3,7 +3,8 @@ import validator from "validator";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const userSchema= new mongoose.Schema({ name: {
+const userSchema= new mongoose.Schema({ 
+  fullName: {
     type: String,
     required: [true, "Please enter your Name!"],
     minLength: [3, "Name must contain at least 3 Characters!"],
