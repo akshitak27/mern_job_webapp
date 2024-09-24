@@ -1,6 +1,6 @@
 import { StrictMode, useContext } from 'react'
 import { createRoot } from 'react-dom/client'
-import {App }from './App.jsx'
+import App from './App.jsx'
 import React, { createContext, useState } from "react";
 import ReactDOM from "react-dom/client";
 

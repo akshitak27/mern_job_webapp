@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const PostJob = () => {
+ const PostJob = () => {
   return (
     <div>PostJob</div>
   )
 }
+export default PostJob

@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const PopularCompanies = () => {
+ const PopularCompanies = () => {
   return (
     <div>PopularCompanies</div>
   )
 }
+export default PopularCompanies
